@@ -1,0 +1,53 @@
+
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-bottom: 2px solid #fa5001 ;
+}
+
+/* controlamos la galeria con estilo masonry */
+.img{
+    /*max-width: 100% !important;*/
+    width: 100% !important;
+    /*outline: 2px solid #fee000;*/
+    /*outline-offset:-20px;*/
+}
+.gallery{
+    columns: 3 auto !important; /* numero de columnas y de que ancho */
+    column-gap: 2%;
+}
+
+/* controlamos el card-body de bootstrap */
+.card-body {
+    height: 100% !important;  
+    padding: 20px 0 0 0;
+
+}
+
+.card{
+    border-color: #ffd8c5;
+}
+
+footer{
+    border-top: 1px dashed #cecece;
+    padding: 25px 0 25px 0;
+    margin: 0 20px;
+}
+
+footer img {
+    width: 32px !important;
+}
+
+footer p{
+    font-weight: 400;
+}
+
+
+.bot{
+    color: #fa5001;
+}
+
+.bot:hover{
+    color: #ff8f5c;
+}
