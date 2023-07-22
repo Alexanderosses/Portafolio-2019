@@ -1,45 +1,160 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* COLORES */
+
+:root{
+    --color1: #f1f7ff;
+    --color2: #ff8f5c;
+    --color3: #ffd8c5;
+    --color4: #cecece;
+    --color5: #000000;
+    --color6: #fa5001;
+    --color7: #f3f3f3;
+}
+
+.bg-1{
+    background-color: var(--color1);
+}
+
+.bg-2{
+    background-color: var(--color7);
+}
+
+body, html{
+    font-family: 'Open Sans', sans-serif;
+}
 
 .logo{
     width: 80px;
     height: 80px;
-    border-bottom: 2px solid #fa5001 ;
+    border-bottom: 2px solid #fa5001;
+    border-right: 2px solid #fa5001;
+    border-radius: 6px;
 }
 
 /* controlamos la galeria con estilo masonry */
 .img{
     /*max-width: 100% !important;*/
-    width: 100% !important;
+    width: 100vw !important;
     /*outline: 2px solid #fee000;*/
     /*outline-offset:-20px;*/
+    object-fit: cover;
 }
+
+.card-title{
+    color: var(--color2);
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+.card-text{
+    font-size: 1rem;
+    border-bottom: 1px dashed rgba(255, 255, 255,.5);
+    padding-bottom: 5px;
+}
+.card a{
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+    color: #ff8f5c;
+    border-bottom: 2px solid var(--color6);
+    padding: 6px 15px;
+    border-radius: 6px;
+}
+
+.card a:hover{
+    background-color: #ff8f5c;
+    color: #fff;
+}
+
+.card-body1{
+    display: none;
+}
+
+.card:hover .card-body1{
+    content: "";
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color7);
+    /*background-color: rgba(000, 000, 000, 0.5);*/
+    background: rgb(60,60,60);
+    background: -moz-linear-gradient(180deg, rgba(60,60,60,0.9510270660998774) 30%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(60,60,60,0.9510270660998774) 30%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(60,60,60,0.9510270660998774) 30%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c3c3c",endColorstr="#ffffff",GradientType=1);
+
+    position: absolute;
+    inset: 0;
+    /* Con las siguientes 2 líneas consigo centrar el contenido en el div tanto en X como en Y */
+    display: grid;
+    place-items: center;
+    transform: translateY(0%); /* Lo saco del div para que no se vea */
+    transition: transform .4s;    
+    display: block !important;
+    border-radius: 6px;
+    z-index: 10;
+    border: 1px solid var(--color6);
+    border-top: 4px solid var(--color6);
+    padding: 1rem;
+}
+
+.card .card-body1:hover::after {
+    transform: translateY(0); /* Lo muevo al div */
+    display: block;
+
+  }
+
 .gallery{
     columns: 3 auto !important; /* numero de columnas y de que ancho */
     column-gap: 2%;
 }
 
-/* controlamos el card-body de bootstrap */
-.card-body {
-    height: 100% !important;  
-    padding: 20px 0 0 0;
-
+.gallery2{
+    columns: 4 auto !important; /* numero de columnas y de que ancho */
+    column-gap: 2%;
 }
 
-.card{
+.gallery3{
+    columns: 3 auto !important; /* numero de columnas y de que ancho */
+    column-gap: 2%;
+}
+
+
+.section-layout{
+    display: flex;
+    columns: 3 auto;
+    column-gap: 2%;
+}
+
+.card-component{
     border-color: #ffd8c5;
+    box-sizing: border-box !important;
+    border: 1px solid #ff8f5c;
+}
+
+.tab-content{
+    height: 100% !important;
+    display: block !important;
+}
+
+.nav {
+    height: 100% !important;
+    overflow:visible ;
 }
 
 footer{
-    border-top: 1px dashed #cecece;
+    border-top: 1px dashed #bababa;
     padding: 25px 0 25px 0;
     margin: 0 20px;
 }
 
-footer img {
+.footer img {
     width: 32px !important;
 }
 
-footer p{
+.footer p{
     font-weight: 400;
 }
 
@@ -51,3 +166,73 @@ footer p{
 .bot:hover{
     color: #ff8f5c;
 }
+
+.over::before{ 
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, #000, #000, .5);
+}
+
+/* ///////////// TABS ///////////// */
+ /* Style the tab */
+ .tab {
+    overflow: hidden;
+    /*background-color: #f1f1f1;*/
+    background-color: #fff;
+    display: flex;
+    justify-content: right;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 2rem;
+  }
+  
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    background-color: #fff;
+    border-radius: 4px 4px 0  0;
+    color: #3e3e3e;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #fff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    /*background-color: #ccc;*/
+    color:#ff8f5c ;
+    border: 1px solid #e3e3e3; 
+    border-bottom: 1px solid #fff !important;
+    background-color: #ffffff;
+
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-top: none;
+  } 
+
+  .active {
+    display: block;
+  } 
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+

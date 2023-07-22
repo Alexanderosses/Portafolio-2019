@@ -1,0 +1,87 @@
+                    <!-- N1 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/viaxesports-web.jpg" alt="Sitio web ViaxEsports" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">ViaxEsports</h5>
+                            <p class="card-text">Sitio web creado con: HTML, PHP, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- N2 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/candelaria-apoya.jpg" alt="Sitio web Candelaria Apoya" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Fundacion Candelaria Apoya</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>             
+                    
+                    <!-- N3 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/viaxediciones.jpg" alt="Sitio web Viax Ediciones" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Viax Ediciones</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>               
+                    
+                    <!-- N4 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/apart-hotel-prov.jpg" alt="Sitio web Apart Hotel Providencia" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Apart Hotel Providencia</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>          
+                    
+                    <!-- N5 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/tvi-america.jpg" alt="Sitio web TVI America" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">TVI America</h5>
+                            <p class="card-text">Sitio web all in one creado con: HTML, CSS, JS</p>
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    <!-- N6 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/transitiva.jpg" alt="Sitio web Transitiva" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Transitiva</h5>
+                            <p class="card-text">Sitio web all in one creado con: HTML, CSS, JS</p>
+                            </div>
+                        </div>
+                    </div>          
+                    
+                    <!-- N7 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/gsi.jpg" alt="Sitio web Consorcio GSI" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Consorcio GSI</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>      
+                    
+                    <!-- N8 -->
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="/img/WEB/velo.jpg" alt="Sitio web Consorcio GSI" class="img-fluid p-4 rounded ">
+                            <div class="card-body">
+                            <h5 class="card-title">Velo</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, JS, WordPress</p>
+                            </div>
+                        </div>
+                    </div>     

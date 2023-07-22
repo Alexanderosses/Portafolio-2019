@@ -3,217 +3,274 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/img/LOGO-AO.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/LOGO-AO.svg" type="image/x-icon">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/own.css" defer>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
-   
-    <script src="/js/own.js"></script>
-    <link rel="stylesheet" href="/css/own.css">
+    <script src="./js/own.js" defer></script>
+
     <title>Portafolio Alexander Osses</title>
     
   </head>
   <body class="container-fluid">
 
     <div class="col-md-10 mx-auto mt-5 justify-content-start">
-        <span><img src="/img/LOGO-AO.svg" alt="Logo Alexander Osses" class="logo pe-2"/></span>
-        <small>Alexander Osses</small> 
+        <span><img src="./img/LOGO-AO.svg" alt="Logo Alexander Osses" class="logo pe-2"/></span>
         <h1>Portafolio</h1>
-        <p class="col-6">Soy un diseñador web especializado en UX/UI, y me encargo de todo el proceso de creación de un producto digital, desde el origen hasta el final. Mi pasión radica en diseñar experiencias digitales atractivas y funcionales que satisfagan las necesidades de los usuarios.</p>    
+        <p class="col-md-6 col-sm-12">Hola Mi nombre es Alexander Osses, soy un diseñador web especializado en UX/UI, y me encargo de todo el proceso de creación de un producto digital, desde el origen hasta el final. Mi pasión radica en diseñar experiencias digitales atractivas y funcionales que satisfagan las necesidades de los usuarios.</p>    
     </div>
-    
-    <nav class="col-md-10 mx-auto">
-
-        <!-- MENU -->
-        <div class="col-md-12">
-            <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active bot" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Diseño UX UI</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bot" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Logos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bot" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Email</button>
-                </li>
-            </ul>
+        
+    <div class="col-md-10 mx-auto tabs">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks active bot" onclick="openCity(event, 'diseno-web')">Diseño UX UI</button>
+            <button class="tablinks bot" onclick="openCity(event, 'logos')">Logos</button>
+            <button class="tablinks bot" onclick="openCity(event, 'email')">Email</button>
         </div>
+        
+        <!-- Tab content -->
+        <div id="diseno-web" class="tabcontent active">
+            <!-- SECCION WEB -->
+            <section class="row row-cols-1 row-cols-md-3 g-4">
+          
+                <div class="col col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="/img/WEB/viaxesports-web.jpg" class="card-img-top" alt="Sitio web ViaxEsports">                      
+                        <div class="card-body1">
+                        <h5 class="card-title">ViaxEsports</h5>
+                        <p class="card-text">Sitio web all in one creado con: HTML, CSS, Bootstrap, JS</p>
+                        <a href="https://www.viaxesports.com/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>
 
-        <!-- PORTAFOLIO WEB -->
-        <div class="tab-content mt-5" id="myTabContent">
-
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-                <!-- SECCION WEB -->
-                <section class="gallery mb-5">
-
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/viaxesports-web.jpg" alt="Sitio web ViaxEsports" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">TVI America</h5>
-                            <p class="card-text">Sitio web all in one creado con: HTML, CSS, JS</p>
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/WEB/candelaria-apoya.jpg" class="card-img-top" alt="Sitio web Candelaria Apoya">                      
+                        <div class="card-body1 bg-2">
+                            <h5 class="card-title">Fundación Candelaria Apoya</h5>
+                            <p class="card-text">Sitio web creado con: HTML, CSS, Bootstrap, PHP, JS, WordPress</p>
+                            <a href="https://www.candelariaapoya.org/" target="_blank" >Visitar sitio</a>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/candelaria-apoya.jpg" alt="Sitio web Candelaria Apoya" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">Fundacion Candelaria Apoya</h5>
-                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/viaxediciones.jpg" alt="Sitio web Viax Ediciones" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">Viax Ediciones</h5>
-                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/apart-hotel-prov.jpg" alt="Sitio web Apart Hotel Providencia" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">Apart Hotel Providencia</h5>
-                            <p class="card-text">Sitio web creado con: HTML, CSS, PHP, JS, WordPress</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/tvi-america.jpg" alt="Sitio web TVI America" class="img"> 
-                        <div class="card-body">
-                            <h5 class="card-title">TVI America</h5>
-                            <p class="card-text">Sitio web all in one creado con: HTML, CSS, JS</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/transitiva.jpg" alt="Sitio web Transitiva" class="img"> 
-                        <div class="card-body">
-                            <h5 class="card-title">Transitiva</h5>
-                            <p class="card-text">Sitio web all in one creado con: HTML, CSS, JS</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/gsi.jpg" alt="Sitio web Consorcio GSI" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">Consorcio GSI</h5>
-                            <p class="card-text">Sitio web creado con: HTML, CSS, JS, WordPress</p>
-                        </div>
-                    </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/WEB/velo.jpg" alt="Sitio web Velo" class="img">
-                        <div class="card-body">
-                            <h5 class="card-title">Velo</h5>
-                            <p class="card-text">Sitio web creado con: HTML, CSS, JS, WordPress</p>
-                        </div>
-                    </div> 
-
-                </section>
-            </div>
-
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                </div>       
                 
-                <!-- SECCION LOGOS -->
-                <section class="gallery mb-5">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                      <img src="./img/WEB/tvi-america.jpg" class="card-img-top" alt="Sitio web TVI America">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">TVI America</h5>
+                        <p class="card-text">Sitio web all in one creado con: HTML, CSS, Bootstrap, JS</p>
+                        <a href="https://tviamerica.com/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>   
 
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/LOGO-TRICICLO-CUADRADO-BLANCO.png" alt="logotipo Triciclo" class="img">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                      <img src="./img/WEB/gsi.jpg" class="card-img-top" alt="Sitio web Consorcio GSI">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">Consorcio GSI</h5>
+                        <p class="card-text">Sitio web creado con: HTML, CSS, Bootstrap, JS, WordPress</p>
+                        <a href="https://www.consorciogsi.cl/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>     
+
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                      <img src="./img/WEB/viaxediciones.jpg" class="card-img-top" alt="Sitio web Viax Ediciones">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">Viax Ediciones</h5>
+                        <p class="card-text">Sitio web creado con: HTML, CSS, PHP, Bootstrap, JS, WordPress</p>
+                        <a href="https://viaxediciones.cl/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>     
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+
+                      <img src="./img/WEB/apart-hotel-prov.jpg" class="card-img-top" alt="Sitio web Apart Hotel Providencia">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">Apart Hotel Providencia</h5>
+                        <p class="card-text">Sitio web creado con: HTML, CSS, Bootstrap, PHP, JS, WordPress</p>
+                        <a href="https://www.ahp.cl/es_ES/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>      
+
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                      <img src="./img/WEB/transitiva.jpg" class="card-img-top" alt="Sitio web Transitiva">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">Transitiva</h5>
+                        <p class="card-text">Sitio web all in one creado con: HTML, CSS, Bootstrap, JS</p>
+                        <a href="https://transitiva.cl/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>                        
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                      <img src="./img/WEB/velo.jpg" class="card-img-top" alt="Sitio web Velo">
+                      <div class="card-body1 bg-2">
+                        <h5 class="card-title">Velo</h5>
+                        <p class="card-text">Sitio web creado con: HTML, CSS, Bootstrap, JS, WordPress</p>
+                        <a href="https://www.velo.cl/" target="_blank" >Visitar sitio</a>
+                      </div>
+                    </div>
+                </div>                    
+                
+            </section>
+        </div>
+        
+        <div id="logos" class="tabcontent">
+            <!-- SECCION LOGOS -->
+            <section class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/LOGO-TRICICLO-CUADRADO-BLANCO.png" class="card-img-top" alt="logotipo Triciclo">
                         <div class="card-body">
                             <h5 class="card-title">Triciclo</h5>
-                            <!--p class="card-text">Triciclo Studio Fotográfico presenta tres círculos en perfecta armonía, imitando las ruedas de un triciclo. Los círculos representan la creatividad, la innovación y la pasión por la fotografía. Con un diseño moderno y elegante, refleja la versatilidad y profesionalismo de Triciclo Studio. </p-->
+                            <p class="card-text">Triciclo Studio Fotográfico presenta tres círculos en perfecta armonía, imitando las ruedas de un triciclo. Los círculos representan la creatividad, la innovación y la pasión por la fotografía. Con un diseño moderno y elegante, refleja la versatilidad y profesionalismo de Triciclo Studio. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/undia.jpg" alt="Logotipo Un Día" class="img">
+                </div>    
+
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/undia.jpg" class="card-img-top" alt="Logotipo Un Día">
                         <div class="card-body">
                             <h5 class="card-title">Un Día</h5>
-                            <!--p class="card-text">El logo de "Un Día" presenta una fusión ingeniosa de las letras "U" y "D". Ambas letras se entrelazan de forma armoniosa, creando una simbiosis visual que simboliza unidad y dinamismo. Su diseño minimalista y moderno refleja una marca sofisticada y progresista. Un símbolo distintivo que captura la esencia de "Un Día" en tan solo dos letras fusionadas. </p-->
+                            <p class="card-text">El logo de "Un Día" presenta una fusión ingeniosa de las letras "U" y "D". Ambas letras se entrelazan de forma armoniosa, creando una simbiosis visual que simboliza unidad y dinamismo. Su diseño minimalista y moderno refleja una marca sofisticada y progresista. Un símbolo distintivo que captura la esencia de "Un Día" en tan solo dos letras fusionadas. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/KIDS-CLUB.jpg" alt="Logotipo Kids Club" class="img">
+                </div>                 
+                
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/KIDS-CLUB.jpg" class="card-img-top" alt="Logotipo Kids Club">
                         <div class="card-body">
                             <h5 class="card-title">kids Club</h5>
-                            <!--p class="card-text">KIDS CLUB Peluquería Infantil presenta un encantador diseño de letras con estilo de globos para niños. Con colores vibrantes y alegres, el logo transmite diversión y alegría, capturando la atención de los más pequeños. Es un diseño lúdico y acogedor que refleja la esencia de este lugar especial. </p-->
+                            <p class="card-text">KIDS CLUB Peluquería Infantil presenta un encantador diseño de letras con estilo de globos para niños. Con colores vibrantes y alegres, el logo transmite diversión y alegría, capturando la atención de los más pequeños. Es un diseño lúdico y acogedor que refleja la esencia de este lugar especial. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/MIGTRA.jpg" alt="Logotipo MIGTRA" class="img">
+                </div>       
+                
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/MIGTRA.jpg" class="card-img-top" alt="Logotipo MIGTRA">
                         <div class="card-body">
                             <h5 class="card-title">Migtra</h5>
-                            <!--p class="card-text">El logo de MIGTRA combina letras delgadas con un icono de indicador de brújula en colores azul y verde. El diseño transmite una sensación de dirección y movimiento, representando la orientación y el crecimiento. Las letras elegantes añaden un toque moderno y sofisticado, reflejando la profesionalidad de la marca. </p-->
+                            <p class="card-text">El logo de MIGTRA combina letras delgadas con un icono de indicador de brújula en colores azul y verde. El diseño transmite una sensación de dirección y movimiento, representando la orientación y el crecimiento. Las letras elegantes añaden un toque moderno y sofisticado, reflejando la profesionalidad de la marca. </p>
                         </div>
-                    </div>                            
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/VGIL.jpg" alt="Logotipo VGIL" class="img">
+                    </div>
+                </div>     
+                
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/VGIL.jpg" class="card-img-top" alt="Logotipo VGIL">
                         <div class="card-body">
                             <h5 class="card-title">VGIL</h5>
-                            <!--p class="card-text">El diseño de VGIL destaca por sus letras gruesas y bordes redondeados que evocan solidez y confianza. En el centro del logotipo, el icono de cabeza de águila presenta las formas de ondas de comunicación inalámbrica, simbolizando vigilancia y agudeza. Los colores gris y rojo añaden fuerza y energía. En el pie del logotipo se encuentra la frase "Seguridad Inalámbrica", transmitiendo el enfoque y especialización de la marca en este ámbito. </p-->
+                            <p class="card-text">El diseño de VGIL destaca por sus letras gruesas y bordes redondeados que evocan solidez y confianza. En el centro del logotipo, el icono de cabeza de águila presenta las formas de ondas de comunicación inalámbrica, simbolizando vigilancia y agudeza. Los col-md-4 col-sm-12ores gris y rojo añaden fuerza y energía. En el pie del logotipo se encuentra la frase "Seguridad Inalámbrica", transmitiendo el enfoque y especialización de la marca en este ámbito. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/ZOMO-NEWEN.png" alt="Logotipo Zomo Newen" class="img">
+                </div>     
+                
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/ZOMO-NEWEN.png" class="card-img-top" alt="Logotipo Zomo Newen">
                         <div class="card-body">
                             <h5 class="card-title">Zomo Newen</h5>
-                            <!--p class="card-text">Zomo Newen, cuyo nombre en mapudungun significa "fuerza de mujer", es una marca de productos cosméticos naturales. Su logo cuenta con un borde floreado que refleja la belleza de la naturaleza. En el centro, destaca la palabra "Zomo Newen", transmitiendo empoderamiento femenino y conexión con la naturaleza. </p-->
+                            <p class="card-text">Zomo Newen, cuyo nombre en mapudungun significa "fuerza de mujer", es una marca de productos cosméticos naturales. Su logo cuenta con un borde floreado que refleja la belleza de la naturaleza. En el centro, destaca la palabra "Zomo Newen", transmitiendo empoderamiento femenino y conexión con la naturaleza. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/M-RISK.jpg" alt="Logotipo M-Risk" class="img">
+                </div>    
+                
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/M-RISK.jpg" class="card-img-top" alt="Logotipo M-Risk">
                         <div class="card-body">
                             <h5 class="card-title">M-Risk</h5>
-                            <!--p class="card-text">M-Risk se distingue por un logo con letras audaces en tonos azul y celeste, que forman el nombre "M-Risk" separado por un guion. El diseño se complementa con un icono abstracto de círculos interconectados, transmitiendo la idea de dinamismo y conexión. En la base del logotipo, se encuentra una frase que resalta la visión de "sustentabilidad inteligente", demostrando el compromiso de la marca con prácticas responsables y sostenibles. </p-->
+                            <p class="card-text">M-Risk se distingue por un logo con letras audaces en tonos azul y celeste, que forman el nombre "M-Risk" separado por un guion. El diseño se complementa con un icono abstracto de círculos interconectados, transmitiendo la idea de dinamismo y conexión. En la base del logotipo, se encuentra una frase que resalta la visión de "sustentabilidad inteligente", demostrando el compromiso de la marca con prácticas responsables y sostenibles. </p>
                         </div>
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/LOGOS/DSH.jpg" alt="Logotipo Dog Second Home" class="img">
+                </div>                    
+
+                <div class="col-md-3 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/LOGOS/DSH.jpg" class="card-img-top" alt="Logotipo Dog Second Home">
                         <div class="card-body">
                             <h5 class="card-title">Dog Second Home</h5>
-                            <!--p class="card-text">El logo de Dog Second Home está diseñado para representar el concepto de un segundo hogar para las mascotas durante las ausencias de sus dueños. Presenta un perro en la parte superior del logotipo, simbolizando la compañía y la fidelidad. Las letras, en tonos azules y cafés con un estilo de fuente serif, transmiten una sensación de confianza y profesionalismo. El diseño refleja el compromiso de la marca de brindar un entorno seguro y acogedor para las mascotas mientras sus dueños están lejos.</p-->
+                            <p class="card-text">El logo de Dog Second Home está diseñado para representar el concepto de un segundo hogar para las mascotas durante las ausencias de sus dueños. Presenta un perro en la parte superior del logotipo, simbolizando la compañía y la fidelidad. Las letras, en tonos azules y cafés con un estilo de fuente serif, transmiten una sensación de confianza y profesionalismo. El diseño refleja el compromiso de la marca de brindar un entorno seguro y acogedor para las mascotas mientras sus dueños están lejos.</p>
                         </div>
-                    </div>  
+                    </div>
+                </div>                   
 
-                </section>
+            </section>
+        </div>
+        
+        <div id="email" class="tabcontent">
+            <!-- SECCION EMAIL -->
+            <section class="row row-cols-1 row-cols-md-3 g-4">
 
-            </div>
-
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL1.jpg" class="card-img-top" alt="Emailing">
+                    </div>
+                </div>        
                 
-                <!-- SECCION EMAIL -->
-                <section class="gallery mb-5">
-
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL1.jpg" alt="Emailing" class="img">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL2.jpg" class="card-img-top" alt="Emailing">
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL2.jpg" alt="Emailing" class="img">
+                </div>        
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL3.jpg" class="card-img-top" alt="Emailing">
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL3.jpg" alt="Emailing" class="img">
+                </div>       
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL4.jpg" class="card-img-top" alt="Emailing">
                     </div>
                     <div class="card p-4 mb-4">
                         <img src="/img/EMAIL/EMAIL4.jpg" alt="Emailing" class="img">
-                    </div>     
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL5.jpg" alt="Emailing" class="img">
+                </div>       
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL5.jpg" class="card-img-top" alt="Emailing">
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL6.jpg" alt="Emailing" class="img">
+                </div>    
+                
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL6.jpg" class="card-img-top" alt="Emailing">
                     </div>
-                    <div class="card p-4 mb-4">
-                        <img src="/img/EMAIL/EMAIL7.jpg" alt="Emailing" class="img">
-                    </div>
-                     
-                </section>     
-                       
-            </div>
+                </div>                       
 
-        </div>
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./img/EMAIL/EMAIL7.jpg" class="card-img-top" alt="Emailing">
+                    </div>
+                </div>       
+                 
+            </section>    
+        </div> 
+    </div>
 
-    </nav>
-      
-    <footer class="col-md-10 mx-auto">
-        <p><img src="/img/LOGO-AO.svg" alt="Logo Alexander Osses" class="pe-2"/>  Alexander Osses E. 2023</p>
-    </footer>
+    <footer class="col-md-10 mx-auto footer">
+        <p><img src="./img/LOGO-AO.svg" alt="Logo Alexander Osses" class="pe-2"/>  Alexander Osses E. 2023</p>
+    </foote>
 
   </body>
 </html>
