@@ -20,6 +20,9 @@
 .bg-2{
     background-color: var(--color7);
 }
+.title{
+    color: #fa5001;
+}
 
 body, html{
     font-family: 'Open Sans', sans-serif;

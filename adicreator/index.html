@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+	    <link rel="stylesheet" href="css/style.css" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    	<link rel="shortcut icon" type="image/x-icon" href="ico/logo.png">
+    	<!-- Description web Meta -->
+    	<meta name="description" content="formulario para crear los xml de VOD">
+		<!-- Compatible Meta -->
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">    	
+    	<!-- Autor Meta -->
+    	<meta name="author" content="AO Diseño / Contacto a: alexander.osses@gmail.com">
+    	<!-- Mobile Meta -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	    <title>ADICREATOR</title>
+	</head>
+	<body>
+		<div class="titulo">			
+			<h2> <img src="ico/logo.png" class="imagen"> ADICREATOR</h2>			
+		</div>
+		<div class="container">		
+		 	<form name="formulario" method="post" action="resultado.php">
+			
+			<h3>Package Metadata</h3>
+			<div class="form-group m-2">
+
+			 	<!--div class="title">Proveedor: </div-->
+			 	<input name="providerp" value="Filmocentro" readonly class="input" type="hidden">
+
+			 	<!--div class="title">ID usuario: </div-->
+			 	<input name="productp" value="FVOD;;;;;;;" readonly class="input" type="hidden">
+			 	
+				<div class="block">
+			 		<div class="title">Ingresa un nombre de paquete: </div>
+			 		<input type="text" name="assetnamep" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>
+
+				<div class="block">
+			 		<div class="title">Describe el activo: </div>
+			 		<input type="text" name="descriptionp" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>			 				 	
+
+			 	<div class="block">
+			 		<div class="title">Fecha de creación: </div>
+			 		<input type="date" name="creationdatep" value="" class="input" required>
+			 	</div>
+				
+				<div class="block">
+			 		<div class="title">Selecciona el dominio del proveedor: </div>
+					<select name="provideridp" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="www.canalviax.com">ViaX</option>
+					  	<option value="www.zonalatinatv.com">Zonalatina</option>
+					  	<option value="www.viaxesports.com">ViaxEsports</option>
+					  	<option value="www.canalartv.com">ArTV</option>
+					</select> 
+			 	</div>
+
+				<div class="block">
+			 		<div class="title">Identificador del contenido: </div>
+			 		<input type="text" name="assetidp" value="" class="input" placeholder="150001" required maxlength="6">
+			 	</div>
+
+
+			 	<!--div class="title">Paquete: </div-->
+			 	<input name="assetclassp" value="package" readonly class="input" type="hidden">		 				 	
+		 	</div>
+
+			<h3>Title Metadata</h3>
+			<div class="form-group m-2">
+
+			 	<!--div class="title">Proveedor: </div-->
+			 	<input name="providert" value="Filmocentro" readonly class="input" type="hidden">
+
+			 	<!--div class="title">ID usuario: </div-->
+			 	<input name="productt" value="FVOD;;;;;;;" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Ingresa un nombre: </div>
+			 		<input type="text" name="assetnamet" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Describe el activo: </div>
+			 		<input type="text" name="descriptiont" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>	
+
+			 	<div class="block">
+			 		<div class="title">Fecha de creación: </div>
+			 		<input type="date" name="creationdatet" value="" class="input" required>
+			 	</div>			
+
+				<div class="block">
+			 		<div class="title">Selecciona el dominio del proveedor: </div>
+					<select name="provideridt" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="www.canalviax.com">ViaX</option>
+					  	<option value="www.zonalatinatv.com">Zonalatina</option>
+					  	<option value="www.viaxesports.com">ViaxEsports</option>
+					  	<option value="www.canalartv.com">ArTV</option>
+					</select> 
+			 	</div>
+
+				<div class="block">
+			 		<div class="title">Identificador del contenido: </div>
+					<input type="text" name="assetidt" value="" class="input" placeholder="150001" required maxlength="6">	
+				</div>	
+
+			 	<!--div class="title">Clase de activo: </div-->
+			 	<input name="assetclasst" value="title" readonly class="input" type="hidden">
+
+		 		<!--div class="title">Tipo: </div-->
+		 		<input name="typet" value="title" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Titulo corto (máx 19 caracteres): </div>
+			 		<input type="text" name="titlebrieft" value="" class="input" placeholder="EP 01" required maxlength="19">
+			 	</div>			
+
+				<div class="block">
+			 		<div class="title">Titulo (máx 128 caracteres): </div>
+			 		<input type="text" name="titlet" value="" class="input" placeholder="Cadena Nacional T01 EP01 HD" required maxlength="128">
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Resumen corto (máx 128 caracteres): </div>
+			 		<textarea name="summaryshortt" value="" class="input" placeholder="Cadena Nacional es un programa de televisión chileno transmitido " required  maxlength="128" ></textarea>
+			 	</div>	
+
+		 		<!--div class="title">Periodo de Renta: </div-->
+		 		<input name="rentalperiodt" value="48" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Resumen extendido (máx 256 caracteres): </div>
+			 		<textarea name="summarylongt" value="" class="input" placeholder="Cadena Nacional es un programa de televisión chileno transmitido " required  maxlength="256" ></textarea>
+			 	</div>	
+
+				<div class="block">
+			 		<div class="title">Clasificación: </div>
+					<select name="ratingt" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="G">ALL</option>
+					  	<option value="PG">7+</option>
+					  	<option value="PG-13">13+</option>
+					  	<option value="RATING">17+</option>	
+					  	<option value="NC-17">PORN</option>					  					  	
+					</select>
+			 	</div>	
+
+		 		<!--div class="title">Estudio: </div-->
+		 		<input name="studiocodet" value="VTR" readonly class="input" type="hidden">
+
+			 	<div class="block">
+			 		<div class="title">Tiempo de duración (Formato – "hh:mm:ss"): </div>
+			 		<input type="text" name="runtimet" value="" placeholder="0:00:00" class="input" required>
+			 	</div>		
+
+			 	<div class="block">
+			 		<div class="title">Tiempo de duración se muestra en la UI (Formato – "hh:mm"): </div>
+			 		<input type="text" name="displayruntimet" value="" placeholder="0:00" class="input" required>
+			 	</div>	
+
+			 	<div class="block">
+			 		<div class="title">Año de producción: </div>
+					<select name="yeart" required class="select">
+						<option value="2019" selected>2019</option>
+					  	<option value="2020">2020</option>
+					  	<option value="2021">2021</option>
+					</select> 
+			 	</div>	
+
+		 		<!--div class="title">indicar la categoria: </div-->
+		 		<input name="categoryt" value="Filmocentro" readonly class="input" type="hidden">
+
+			 	<div class="block">
+			 		<div class="title">Genero en el que se encuentra catalogado el contenido: </div>
+					<select name="genret" required class="select">
+						<option value="">Seleccione</option>
+						<option value="Comedy">Comedia</option>
+					  	<option value="Fiction/Drama">Drama</option>
+					  	<option value="General non-fiction">Documental</option>
+					  	<option value="Science Fiction">Ciencia Ficción</option>
+					  	<option value="History">Historia</option>
+					  	<option value="Personal/Lifestyle/Family">Pasatiempo</option>
+					  	<option value="Amusement/Entertaiment" selected>Entretenimiento</option>
+					  	<option value="Biography/Notable personalities">Biografia</option>
+					  	<option value="Perenting">Familiar</option>		
+					  	<option value="Action">Acción</option>								  				  			
+					</select> 
+			 	</div>		
+
+		 		<!--div class="title">Nombre distribuidor: </div-->
+		 		<input name="distributornamet" value="VTR" class="input" readonly type="hidden">
+
+			 	<div class="block">
+			 		<div class="title">Corresponde a la fecha de inicio de la ventana de licencia: </div>
+			 		<input type="date" name="licensewindowstartt" value="2019-09-05" class="input">
+			 	</div>			
+
+			 	<div class="block">
+			 		<div class="title">Corresponde a la fecha de fin de la ventana de licencia: </div>
+			 		<input type="date" name="licensewindowendt" value="2019-09-05" class="input">
+			 	</div>	
+
+			 	<!--div class="title">Tipo de Audiencia: </div-->
+			 	<input name="audiencet" value="General" class="input" placeholder="General" readonly type="hidden">
+
+			 	<!--div class="title">Facturación: </div-->
+			 	<input name="billingIDt" value="11100" class="input" readonly type="hidden">
+
+			 	<div class="block">
+			 		<div class="title">Nombre Animador 1: </div>
+			 		<input type="text" name="actorsdisplayt" value="" class="input" placeholder="Ivan Guerrero" required>
+			 	</div>	
+
+			 	<div class="block">
+			 		<div class="title">Nombre Estudio: </div>
+					<select name="studiot" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="www.canalviax.com">ViaX</option>
+					  	<option value="www.zonalatinatv.com">Zonalatina</option>
+					  	<option value="www.viaxesports.com">ViaxEsports</option>
+					  	<option value="www.canalartv.com">ArTV</option>
+					</select> 
+			 	</div>		
+
+			 	<!--div class="title">Nombre del contrato: </div-->
+			 	<input name="contractnamet" value="Filmocentro" class="input" readonly type="hidden">			 			 	
+
+			 	<div class="block">
+			 		<div class="title">Nombre Animador 2: </div>
+			 		<input type="text" name="actorst2" value="" class="input" placeholder="Ivan Guerrero" required>
+			 	</div>		
+
+			 	<div class="block">
+			 		<div class="title">Nombre Animador 3: </div>
+			 		<input type="text" name="actorst3" value="" class="input" placeholder="Ivan Guerrero" required>
+			 	</div>		
+
+			 	<div class="block">
+			 		<div class="title">Nombre Animador 4: </div>
+			 		<input type="text" name="actorst4" value="" class="input" placeholder="Ivan Guerrero" required>
+			 	</div>		
+
+			 	<div class="block">
+			 		<div class="title">Nombre Estudio: </div>
+			 		<input type="text" name="studionamet" value="" class="input" placeholder="Via X" required>
+			 	</div>		
+
+			 	<div class="block">
+			 		<div class="title">Nombre Director: </div>
+			 		<input type="text" name="directort" value="" class="input" placeholder="Via X" required>
+			 	</div>				 			 				 				 			 				 			 		 				 			
+			 </div>		
+
+			<h3>Movie Metadata</h3>
+			<div class="form-group m-2">
+
+			 	<!--div class="title">Proveedor: </div-->
+			 	<input name="providerm" value="Filmocentro" readonly class="input" type="hidden">
+
+			 	<!--div class="title">ID usuario: </div-->
+			 	<input name="productm" value="FVOD;;;;;;;" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Ingresa un nombre: </div>
+			 		<input type="text" name="assetnamem" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>	
+
+				<div class="block">
+			 		<div class="title">Describe el activo: </div>
+			 		<input type="text" name="descriptionm" value="" class="input" placeholder="CNACIONAL_MUESTRA" required>
+			 	</div>	
+
+			 	<div class="block">
+			 		<div class="title">Fecha de creación: </div>
+			 		<input type="date" name="creationdatem" value="" class="input" required>
+			 	</div>			
+
+				<div class="block">
+			 		<div class="title">Selecciona el dominio del proveedor: </div>
+					<select name="provideridm" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="www.canalviax.com">ViaX</option>
+					  	<option value="www.zonalatinatv.com">Zonalatina</option>
+					  	<option value="www.viaxesports.com">ViaxEsports</option>
+					  	<option value="www.canalartv.com">ArTV</option>
+					</select> 
+			 	</div>
+
+				<div class="block">
+			 		<div class="title">Identificador del contenido: </div>
+					<input type="text" name="assetidm" value="" class="input" placeholder="150001" required maxlength="6">	
+			 	</div>	
+
+			 	<!--div class="title">Clase de activo: </div-->
+			 	<input name="assetclassm" value="movie" readonly class="input" type="hidden">
+
+			 	<!--div class="title">Tipo: </div-->
+			 	<input name="typem" value="movie" readonly class="input" type="hidden">
+
+
+			 	<!--div class="title">Tipo de audio disponible: </div-->
+			 	<input name="audiotypem" value="Stereo" class="input" required type="hidden" > 
+	
+
+				<div class="block">
+			 		<div class="title">Tamaño del archivo (en bytes): </div>
+			 		<input type="text" name="contentfilesizem" value="" class="input" placeholder="564036096" required>
+			 	</div>	
+
+				<div class="block">
+			 		<div class="title">Formato de pantalla: </div>
+					<select name="screenformatm" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="Widescreen">Widescreen HD</option>
+						<option value="Standard">Standard SD</option>
+					</select> 
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Formato de video: </div>
+					<select name="encodingtypem" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="H264">HD H264</option>
+						<option value="MPEG2">SD MPEG2</option>
+					</select> 
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Formato de video HD: </div>
+					<select name="hdcontentm" required class="select">
+						<option value="Y" selected>Si</option>
+						<option value="N">No</option>
+					</select> 	
+			 	</div>	
+
+				<div class="block">
+			 		<div class="title">Tipo de idioma: </div>
+					<select name="languagesm" required class="select">
+						<option value="es" selected>Español</option>
+						<option value="en">Ingles</option>
+					</select> 			 		
+			 	</div>		
+
+				<!--div class="block">
+			 		<div class="title">Idioma subtitulos: </div>
+			 		<input type="text" name="subtitlelanguagesm" value="es" class="input" readonly>
+			 	</div-->		
+
+			 	<!--div class="title">Protección contra copia: </div-->
+			 	<input name="copyprotectionm" value="Y" class="input" readonly type="hidden">	
+
+				<div class="block">
+			 		<div class="title">Nombre del archivo TS: </div>
+			 		<input type="text" name="contentm" value="" class="input" placeholder="CADENA_NACIONAL_T01_EP01_HD.ts" required>
+			 	</div> 				 				 			 					 		 				 		 				 	
+			</div>	 
+
+			<h3>Box Metadata</h3>
+			<div class="form-group m-2">	
+
+			 	<!--div class="title">Proveedor: </div-->
+			 	<input name="providerb" value="Filmocentro" readonly class="input" type="hidden">
+
+			 	<!--div class="title">ID usuario: </div-->
+			 	<input name="productb" value="FVOD;;;;;;;" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Ingresa un nombre: </div>
+			 		<input type="text" name="assetnameb" value="" class="input" placeholder="CNACIONAL_MUESTRA_Boxcover" required>
+			 	</div>	
+
+				<div class="block">
+			 		<div class="title">Describe el activo: </div>
+			 		<input type="text" name="descriptionb" value="" class="input" placeholder="CNACIONAL_MUESTRA_Boxcover" required>
+			 	</div>
+
+			 	<div class="block">
+			 		<div class="title">Fecha de creación: </div>
+			 		<input type="date" name="creationdateb" value="" class="input" required>
+			 	</div>			
+
+				<div class="block">
+			 		<div class="title">Ingresa dominio del proveedor: </div>
+					<select name="provideridb" required class="select">
+						<option value="" selected>Seleccione</option>
+						<option value="www.canalviax.com">ViaX</option>
+					  	<option value="www.zonalatinatv.com">Zonalatina</option>
+					  	<option value="www.viaxesports.com">ViaxEsports</option>
+					  	<option value="www.canalartv.com">ArTV</option>
+					</select> 
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Identificador del contenido: </div>
+					<input type="text" name="assetidb" value="" class="input" placeholder="150001" required maxlength="6">	
+			 	</div>	
+
+			 	<!--div class="title">Clase de activo: </div-->
+			 	<input name="assetclassb" value="box cover" readonly class="input" type="hidden">
+
+			 	<!--div class="title">Tipo: </div-->
+			 	<input name="typeb" value="box cover" readonly class="input" type="hidden">
+
+				<div class="block">
+			 		<div class="title">Tamaño del archivo (en bytes): </div>
+			 		<input type="text" name="contentfilesizeb" value="" class="input" placeholder="20628" required>
+			 	</div>		
+
+				<div class="block">
+			 		<div class="title">Nombre del archivo de imagen: </div>
+			 		<input type="text" name="contentb" value="" class="input" placeholder="CN_CARATULA.jpg" required>
+			 	</div>				 			 	
+			</div>			 	
+			
+			<div class="btn-block">
+				<input type="reset" value="Restaurar formulario" class="btn-reset">
+			</div>
+
+			<div class="btn-block">
+			 	<input type="submit" value="Crear XML" class="btn-send" />
+			</div>
+
+		</form>
+
+		<small>Creado por: <strong>AO diseño | AODISENO.COM</strong></small>
+		</div>
+
+	</body>
+</html>
